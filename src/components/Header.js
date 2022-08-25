@@ -37,7 +37,7 @@ export const Header = () => {
         <a className="bn bn4" href={() => false} onClick={() => { setShowReact(true); setShowJavascript(false); setShowHtml(false); setShowCss(false); }}><span className="bn31span">React</span></a>
 
       </div>
-      {showWarning ? <div className="animate__animated  animate__zoomInRight"> (<Warning />) </div>: <div></div>}
+      {showWarning ? <div className="animate__animated  animate__zoomInRight"> <Warning /> </div>: <div></div>}
       <div >
 
         {showHtml ? (

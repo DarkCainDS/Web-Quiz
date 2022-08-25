@@ -883,7 +883,7 @@ const questions100 = [
         questionTitle: 'What is inmutable in javascript?',
         options: [
             { answerText: 'Immutables are the objects whose state cannot be changed once the object is created', isCorrect: true },
-            { answerText: 'mutable is a template definition of an objects properties and methods', isCorrect: false },
+            { answerText: 'Inmutable is a template definition of an objects properties and methods', isCorrect: false },
             { answerText: 'is a value (primitive or object) passed as input to a function.', isCorrect: false },
             { answerText: 'is a type of variable that can be changed. In JavaScript, only objects and arrays are inmutable, not primitive values.', isCorrect: false },
         ],
