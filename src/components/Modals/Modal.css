@@ -1,0 +1,95 @@
+.modal {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 290%;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modal.is-open {
+    display: flex;
+}
+
+.modal-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: black;
+    margin-top: -10px;
+}
+
+.modal-container-Mario {
+    width: 100%;
+    height: 100%;
+    background-image: url(/public/assets/images/Star-World-Layer.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+.modal-container-Metroid {
+    width: 100%;
+    height: 100%;
+    background-image: url(/public/assets/images/Mother-BrainV2.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.modal-container-Donkey {
+    width: 100%;
+    height: 100%;
+    background-image: url(/public/assets/images/lost-worldv2.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.modal-container-Zelda {
+    width: 100%;
+    height: 100%;
+    background-image: url(/public/assets/images/Dark-World.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    width: 30px;
+    height: 20px;
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    padding: 3px;
+}
+.modal-close:hover{
+    transform:scale(0.9)
+}
+
+.modal-Button {
+    width: 50px;
+    height: 50px;
+    color: black;
+}
+
+

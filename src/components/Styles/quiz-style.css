@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&family=Silkscreen&family=VT323&display=swap');
+
+.container {
+
+  margin: 0 auto;
+  background-color: transparent;
+  width: auto;
+  max-width: 450px;
+  min-height: 200px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  border: 1px dashed pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.score-section {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#4fcf59 25%, green 40%, white 50%, #136eb9 75%);
+  border-radius: 20px;
+  font-weight: bold;
+  color: blue;
+  text-shadow: 0.5px 5px 1px rgba(176, 27, 235, 0.61);
+  font-family: 'Silkscreen', cursive;
+
+}
+
+.score-section span {
+  animation: jumping 1s infinite;
+}
+
+.question-count .next-question span {
+  color: rgb(182, 219, 47);
+  font-size: 20px;
+  padding: 5px;
+  font-family: 'Silkscreen', cursive;
+  animation: change 1s infinite ease-in-out;
+}
+
+@keyframes change {
+  0% {
+    color: rgba(0, 128, 0, 0.733);
+  }
+
+  25% {
+    color: green;
+  }
+
+  50% {
+    color: rgba(0, 0, 233, 0.486);
+  }
+
+  75% {
+    color: rgb(255, 0, 0);
+  }
+
+  100% {
+    color: yellowgreen;
+  }
+
+}
+
+.next-question button {
+  width: 100px;
+  background: red;
+}
+
+.next-question button:hover {
+  background: green;
+}
+
+.question-section {
+  width: 100%;
+  position: relative;
+  color: #ffffff;
+
+}
+
+.question-count {
+  margin-bottom: 20px;
+  color: red;
+  font-size: 40px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+}
+
+.question-count span {
+  font-size: 20px;
+  color: white;
+
+}
+
+.question-count-modal {
+  margin-bottom: 10px;
+  color: red;
+  font-size: 30px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row
+}
+
+.question-count-modal span {
+  font-size: 20px;
+  margin-top: 10px;
+  color: white;
+}
+
+.timer {
+  background: rgba(209, 123, 123, 0.575);
+  border: 5px solid rgba(255, 189, 67, 0.473);
+  border-radius: 50px;
+}
+
+
+.question-text {
+  
+  font-size: 20px;
+  color: white;
+  font-family: 'Staatliches', cursive;
+}
+
+.question-text-houndred {
+  background: #252d4aaf;
+  border-radius: 20px;
+}
+
+/* ANSWERS/RIGHT SECTION */
+.answer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.answer-individual {
+  background: #252d4aaf;
+  border-radius: 50px;
+  height: 50px;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.answer-individual-modal {
+  background: #252d4aaf;
+  border-radius: 50px;
+  height: 50px;
+  font-size: 12px;
+  justify-content: center;
+}
+
+.quiz-button {
+  width: 100%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #252d4a;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #234668;
+  cursor: pointer;
+  margin-top: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+}
+
+
+.quiz-button:hover {
+  background-color: #555e7d;
+}
+
+.quiz-button:focus {
+  outline: none;
+}
+
+.quiz-button svg {
+  margin-right: 5px;
+}
+@media (max-width: 800px) {
+  .answer-individual-modal {
+    font-size: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .answer-individual-modal {
+    font-size: 9px;
+  }
+  .answer-individual {
+    font-size: 10px;
+  }
+  .score-section {
+    font-size: 22px;
+    text-shadow: 0.5px 4px 1px rgba(176, 27, 235, 0.61);
+  }
+  .quiz-button {
+    font-size: 10px;
+  }
+  .question-text {
+    font-size: 15px;
+  }
+  .question-count {
+    font-size: 30px;
+  }
+
+  .question-count .next-question span {
+    font-size: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .score-section {
+    font-size: 18px;
+    
+  }
+  .question-count .next-question span {
+    font-size: 12px;
+  }
+}

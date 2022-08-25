@@ -1,0 +1,175 @@
+.card {
+    width: 300px;
+    height: 400px;
+    background: transparent;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .25s ease;
+    backface-visibility: hidden;
+}
+
+.card:hover {
+    transform: scale(.95);
+}
+
+.card:hover:after {
+    height: 200px;
+}
+
+.card:hover .con-text p {
+    margin-bottom: 0px;
+    opacity: 1;
+}
+
+.card:hover img {
+    transform: scale(.4);
+}
+
+.card:after {
+    width: 100%;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    height: 150px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0)0%, rgba(0, 0, 0, 1)100%);
+    z-index: 20;
+    transition: all .25s ease;
+}
+
+.card img {
+    transform: scale(0.3);
+    z-index: 10;
+    transition: all .25s ease;
+    object-fit: contain;
+}
+
+.card .con-text {
+    z-index: 30;
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.card .con-text p {
+    font-size: .8rem;
+    opacity: 0;
+    margin-bottom: -50px;
+    transition: all .25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.con-text h2 {
+    font-size: 25px;
+}
+
+
+
+.unit-chart {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 100px;
+
+
+}
+
+.card-order {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 30px;
+
+}
+
+@media (max-width: 1600px) {
+    .card {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card img {
+        transform: scale(0.2);
+    }
+
+    .card:hover img {
+        transform: scale(0.25);
+    }
+
+    .card .con-text p h1 {
+        font-size: 1px;
+    }
+
+    .card:hover:after {
+        height: 80px;
+    }
+
+    .card:after {
+        height: 30px;
+    }
+
+    .card-order {
+        grid-template-columns: 30% 30% 30%;
+    }
+}
+
+@media (max-width: 800px) {
+    .card {
+        width: 120px;
+        height: 120px;
+    }
+
+    .card-order {
+        grid-template-columns: 40% 40%;
+    }
+
+    .con-text h2 {
+        font-size: 10px;
+    }
+
+    .card img {
+        transform: scale(0.1);
+    }
+    .card:hover img {
+        transform: scale(.17);
+    }
+
+    .card .con-text p {
+        font-size: 0.3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 90px;
+        height: 90px;
+        
+    }
+
+    .con-text h2 {
+        font-size: 5px;
+    }
+
+    .card img {
+        transform: scale(0.1);
+    }
+    .card:hover img {
+        transform: scale(.14);
+    }
+
+    .card .con-text p {
+        font-size: 0.3rem;
+    }
+}
